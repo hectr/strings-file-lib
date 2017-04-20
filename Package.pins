@@ -1,0 +1,18 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "Regex",
+      "reason": null,
+      "repositoryURL": "https://github.com/hectr/swift-regex.git",
+      "version": "0.1.0"
+    },
+    {
+      "package": "StreamReader",
+      "reason": null,
+      "repositoryURL": "https://github.com/hectr/swift-stream-reader.git",
+      "version": "0.2.0"
+    }
+  ],
+  "version": 1
+}
