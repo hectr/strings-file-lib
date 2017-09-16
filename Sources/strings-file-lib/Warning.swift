@@ -26,3 +26,9 @@ public func warning(_ text: String, isFatalError: Bool = false) {
         fatalError(text)
     }
 }
+
+private func _crash(_ message: String) -> Void {
+    fatalError(message)
+}
+
+public internal(set) var crash: (String) -> Void = _crash

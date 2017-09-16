@@ -20,9 +20,9 @@
 
 import Foundation
 
-private var loggingEnabled = true
+internal private(set) var loggingEnabled = true
 
-public func log(_ text: String) {
+private func _log(_ text: String) {
     if loggingEnabled {
         print("LOG: " + text)
     }
@@ -31,3 +31,5 @@ public func log(_ text: String) {
 public func setSilent(_ silent: Bool) {
     loggingEnabled = !silent
 }
+
+public internal(set) var log: (String) -> Void = _log

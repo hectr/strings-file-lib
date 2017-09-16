@@ -20,9 +20,9 @@
 
 import Foundation
 
-private var verbosityEnabled = false
+internal private(set) var verbosityEnabled = false
 
-public func verbose(_ text: String) {
+private func _verbose(_ text: String) {
     if verbosityEnabled {
         print("VERBOSE: " + text)
     }
@@ -31,3 +31,5 @@ public func verbose(_ text: String) {
 public func setVerbose(_ verbose: Bool) {
     verbosityEnabled = verbose
 }
+
+public internal(set) var verbose: (String) -> Void = _verbose

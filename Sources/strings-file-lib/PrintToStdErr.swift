@@ -22,6 +22,8 @@ import Foundation
 
 private var stderr = FileHandle.standardError
 
-public func printToStdErr(_ string: String) {
+private func _printToStdErr(_ string: String) {
     print(string, to:&stderr)
 }
+
+public internal(set) var printToStdErr: (String) -> Void = _printToStdErr

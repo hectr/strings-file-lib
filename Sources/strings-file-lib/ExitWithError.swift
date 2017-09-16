@@ -22,5 +22,11 @@ import Foundation
 
 public func exit(with error: Error) {
     let status = toExitStatus(from: error)
+    exitWithStatus(status)
+}
+
+private func _exitWithStatus(_ status: Int32) {
     exit(status)
 }
+
+public internal(set) var exitWithStatus: (Int32) -> Void = _exitWithStatus
