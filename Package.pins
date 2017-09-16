@@ -2,6 +2,12 @@
   "autoPin": true,
   "pins": [
     {
+      "package": "Idioms",
+      "reason": null,
+      "repositoryURL": "https://github.com/hectr/swift-idioms.git",
+      "version": "0.1.1"
+    },
+    {
       "package": "Regex",
       "reason": null,
       "repositoryURL": "https://github.com/hectr/swift-regex.git",

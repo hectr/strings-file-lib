@@ -19,6 +19,7 @@
 // THE SOFTWARE.
 
 import Foundation
+import Idioms
 
 public struct ConflictMarkerInfo {
     public let markerSize: Int
