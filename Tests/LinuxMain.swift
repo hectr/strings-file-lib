@@ -1,5 +1,5 @@
 import XCTest
-@testable import strings_file_libTests
+@testable import StringsFileLibTests
 
 XCTMain([
     testCase(DisplayEmptyLineTests.allTests),
