@@ -56,7 +56,7 @@ public func parse(lines: [Line], skipInvalidLines: Bool = true) throws -> [Strin
 
 private func isEmpty(line: Line) -> Bool {
     let trimmedLine = line.trimmingCharacters(in: CharacterSet.whitespaces)
-    return trimmedLine.characters.count == 0
+    return trimmedLine.count == 0
 }
 
 private func parse(comment line: Line, iterator: IndexingIterator<[Line]>) -> Comment? {

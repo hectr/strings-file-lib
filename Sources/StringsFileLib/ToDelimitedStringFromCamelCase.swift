@@ -22,7 +22,7 @@ import Foundation
 
 public func toDelimitedString(fromCamelCase string: String, with delimiter: String = " ") -> String {
     var newString: String = ""
-    for character in string.characters {
+    for character in string {
         if "A"..."Z" ~= character {
             newString.append(delimiter)
         }

@@ -24,9 +24,9 @@ public func merge(_ filesStrings: FilesStrings, into resultPath: Pathname) throw
     var hasConflicts    = false
     var result          = [[StringPair]]()
     
-    var ancestor = try toDictionary(from: filesStrings.ancestor)
-    var current  = try toDictionary(from: filesStrings.current)
-    var other    = try toDictionary(from: filesStrings.other)
+    let ancestor = try toDictionary(from: filesStrings.ancestor)
+    let current  = try toDictionary(from: filesStrings.current)
+    let other    = try toDictionary(from: filesStrings.other)
 
     var allKeys = Set<String>()
     ancestor.forEach { allKeys.insert($0.key) }
